@@ -1,43 +1,58 @@
-$(function () {
+window.addEventListener('DOMContentLoaded', () => {
 
-    $('.main_slider').slick({
-        arrows: false,
-        autoplay: false,
-        dots: true,
-        pauseOnHover: false,
-        pauseOnFocus: false,
+    window.addEventListener('scroll', () => {
+        let sct = window.scrollY;
+        console.log(sct);
+        sct > 0
+            ? document.querySelector('#Header').classList.add('on')
+            : document.querySelector('#Header').classList.remove('on');
+
+        sct > 500
+            ? document.querySelector('.to_top').classList.add('on')
+            : document.querySelector('.to_top').classList.remove('on');
     });
 
-    $('.mainArrow i:nth-child(1)').on('click', function () {
-        $('.mainSlider').slick('slickPrev')
+    const MainSlider = new Swiper('.latest_slider', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    })
+
+    const SCE_ELE = document.querySelectorAll('.active-event');
+    window.addEventListener('scroll', () => {
+        let sct = window.scrollY;
+        SCE_ELE.forEach(el => {
+            sct > el.offsetTop - 300
+                ? el.classList.add('on')
+                : el.classList.remove('on')
+        })
     });
-    $('.mainArrow i:nth-child(2)').on('click', function () {
-        $('.mainSlider').slick('slickNext')
+
+
+    document.querySelector('.to_top').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     });
 
 
-
-    $('.gnb>ul>li>a').on('click', function (event) {
-        if ($(window).width() < 769) {
-            event.preventDefault();
-            $('.smenu').slideUp()
-            $(this).next().stop().slideToggle();
-        }
+    document.querySelector('.mopen').addEventListener('click', (e) => {
+        const TG = e.currentTarget;
+        TG.classList.toggle('on');
+        document.querySelector('#Header').classList.toggle('ox')
     });
 
-
-    $('.mbtn').on('click', function () {
-        $('.gnb').toggleClass('on')
-    });
-
+    document.querySelector('#Header').addEventListener('wheel', (e) => {
+        e.preventDefault() //이벤트 자체를 막음...
+    })
 
 
-    $(window).on('resize', function () {
-        $('.gnb').removeClass('on');
-        $('.smenu').removeAttr('style')
-    });
+
 
 
 })
-
-

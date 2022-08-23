@@ -2,7 +2,19 @@
 
 *{ 
     font-family: 'Montserrat', sans-serif; 
-    /* outline: .0625rem dashed #33ff33;  */
+   outline: .0625rem dashed #33ff33; 
 } 
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 
+
+
+.header {position: absolute; top: 0; left: 0; line-height: 80px;   color: #fff; font-size: 15px; z-index: 999;}
+
+.header .container {width: 1700px; margin: 0 auto; display: flex; justify-content: space-between;}     
+
+.header ul {display: flex; gap: 20px; }
+.header h1 {max-width: 200px;}
+
+.main_visual {height: 100vh; overflow: hidden;}
+
+.main_video { position: relative; width: 100%;}
