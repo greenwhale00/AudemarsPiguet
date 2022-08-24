@@ -4,11 +4,16 @@
     font-family: 'Montserrat', sans-serif; 
    outline: .0625rem dashed #33ff33; 
 } 
+
+
+.Wrap {overflow-x: hidden; overflow-y: hidden;}
+
+
 .container { display: flex; width: 1200px; margin: 0 auto; } 
 
 
 
-.header {position: absolute; top: 0; left: 0; line-height: 80px;   color: #fff; font-size: 15px; z-index: 999;}
+.header {position: absolute; top: 0; left: 0; line-height: 80px; color: #fff; font-size: 15px; z-index: 999;}
 
 .header .container {width: 1700px; margin: 0 auto; display: flex; justify-content: space-between;}     
 
@@ -18,3 +23,38 @@
 .main_visual {height: 100vh; overflow: hidden;}
 
 .main_video { position: relative; width: 100%;}
+
+
+.latest { position: relative; height: 920px; } 
+
+.swiper-wrapper {position: absolute;}
+
+
+
+.collection {height: 100vh;}
+.collection img {height: 50%;}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {background: #02291f; color: #fff;}
+
+.footer .container {width:1700px; display: flex; justify-content: space-between; padding-bottom: 100px; vertical-align: middle; }
+
+.footer .container>ul {display: flex;}
+.footer .container>ul li a {display: block;}
+
+
+.footer .footer_icon {font-size: 25px;}
+.footer .footer_icon li~li { margin: 0 0 0 15px;}
+
+.footer .middle {gap: 30px; font-size: 13px;}
+

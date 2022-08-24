@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
             disableOnInteraction: false,
         },
         slidesPerView: 3,
-        spaceBetween: 120,
+        spaceBetween: 0,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
