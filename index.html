@@ -16,12 +16,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
+
 </head>
 
 
@@ -57,12 +56,17 @@
             </section>
 
             <section class="latest">
-                <h2>
-                    <span>EXPLORE</span><br />
-                    <span>OUR LATEST</span>
+                <div class="container">
+                    <div class="title">
+                        <h2>EXPLORE</h2>
+                        <span class="tit">OUR LATEST</span>
+                        <div class="effect">
+                            <a href="" class="line">Discover more</a>
+                        </div>
+                    </div>
 
-                    <div class="latest_slider">
-                        <div class="swiper-wrapper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper product">
                             <figure class="swiper-slide itm01">
                                 <img src="./img/latest_slider01.jpg" alt="">
                             </figure>
@@ -87,43 +91,186 @@
                             <figure class="swiper-slide itm08">
                                 <img src="./img/latest_slider08.jpg" alt="">
                             </figure>
-                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="celebrating">
+                <div class="container">
+                    <figure>
+                        <img src="./img/50years.png" alt="">
+                    </figure>
+                    <div class="title">
+                        <h2>ROYAL OAK COLLECTION</h2>
+                        <span class="tit">CELEBRATING<br />50 YEARS</span>
+                        <div class="effect">
+                            <a href="" class="line">Discover more</a>
                         </div>
 
                     </div>
+                </div>
+            </section>
 
-                </h2>
+            <section class="design">
+                <div class="container">
+                    <div class="title">
+                        <h2>50 YEARS</h2>
+                        <span class="tit">OF DESIGN</span>
+                        <div class="effect">
+                            <a href="" class="line">Discover more</a>
+                        </div>
+
+                    </div>
+                    <div class="swiper design_slider">
+                        <div class="swiper-wrapper design">
+                            <figure class="swiper-slide itm01">
+                                <img src="./img/design01.jpg" alt="">
+                            </figure>
+                            <figure class="swiper-slide itm02">
+                                <img src="./img/design02.jpg" alt="">
+                            </figure>
+                            <figure class="swiper-slide itm03">
+                                <img src="./img/design03.jpg" alt="">
+                            </figure>
+                            <figure class="swiper-slide itm04">
+                                <img src="./img/design04.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
             </section>
 
 
-            <section class="collection">
-                <img src="./img/collection.png" alt="">
+            <section class="atelier">
+                <div class="container">
+                    <figure>
+                        <img src="./img/ATELIER.png" alt="">
+                    </figure>
+                    <div class="title">
+                        <h2>FIND A</h2>
+                        <span class="tit">MUSÉE ATELIER</span>
+                        <div class="effect">
+                            <a href="" class="line">Explore all Boutiques</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+            <section class="boutique">
+                <div class="container">
+                    <div class="title">
+                        <h2>FIND A</h2>
+                        <span class="tit">BOUTIQUE</span>
+                        <div class="effect">
+                            <a href="" class="line">Explore all Boutiques</a>
+                        </div>
+                    </div>
+                    <figure>
+                        <img src="./img/boutique.png" alt="">
+                    </figure>
+                </div>
+
+            </section>>
+
+
+
+            <section class="news">
+                <div class="container">
+                    <div class="title">
+                        <h2>GET THE</h2>
+                        <span class="tit">LATEST NEWS</span>
+                    </div>
+
+                    <div class="newsletter">
+                        <p>
+                            우리의 브랜드, 제품, 그리고 다가오는 이벤트에 대한 최신 소식을 가장 먼저 받아보세요.
+                        </p>
+                        <div class="effect">
+                            <a href="" class="line">subscribe</a>
+                        </div>
+                    </div>
+
+
             </section>
 
         </main>
+
+
         <footer class="footer">
             <div class="container">
-                <ul class="footer_icon">
-                    <li><a href=""><i class="xi-facebook"></i></a></li>
-                    <li><a href=""><i class="xi-instagram"></i></a></li>
-                    <li><a href=""><i class="xi-pinterest"></i></a></li>
-                    <li><a href=""><i class="xi-twitter"></i></a></li>
-                    <li><a href=""><i class="xi-youtube-play"></i></a></li>
-
-                </ul>
-
-                <ul class="middle">
-                    <li><a href="">법적 고지 및 이용 약관</a></li>
-                    <li><a href="">접근성</a></li>
-                    <li><a href="">각인</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">기업 개인정보 취급방침 개요</a></li>
-                    <li><a href="">E-부티크 판매 약관</a></li>
-                </ul>
-                <div class="copyright">
-                    &copy; 2022 Audemars Piguet
+                <div class="footer_box">
+                    <p>시계</p>
+                    <ul>
+                        <li><a href="">모든 시계</a></li>
+                        <li><a href="">콜렉션</a></li>
+                        <li><a href="">신제품</a></li>
+                        <li><a href="">부티크</a></li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <p>메종</p>
+                    <ul>
+                        <li><a href="">메종</a></li>
+                        <li><a href="">장인정신</a></li>
+                        <li><a href="">헤리티지</a></li>
+                        <li><a href="">Musée Atelier</a></li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <p>서비스</p>
+                    <ul>
+                        <li><a href="">전체 서비스</a></li>
+                        <li><a href="">시계 수리</a></li>
+                        <li><a href="">보증</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <p>컴퍼니</p>
+                    <ul>
+                        <li><a href="">채용</a></li>
+                        <li><a href="">보도자료</a></li>
+                        <li><a href="">재단</a></li>
+                        <li><a href="">지속가능성</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <ul class="footer_icon">
+                        <li><a href=""><i class="xi-facebook"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-pinterest"></i></a></li>
+                        <li><a href=""><i class="xi-twitter"></i></a></li>
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+
+                    </ul>
+
+                    <ul class="middle">
+                        <li><a href="">법적 고지 및 이용 약관</a></li>
+                        <li><a href="">접근성</a></li>
+                        <li><a href="">각인</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">기업 개인정보 취급방침 개요</a></li>
+                        <li><a href="">E-부티크 판매 약관</a></li>
+                    </ul>
+                    <div class="copyright">
+                        &copy; 2022 Audemars Piguet
+                    </div>
+                </div>
+            </div>
+
 
         </footer>
         <div class="to_top">
@@ -158,9 +305,10 @@
 
 
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
+
 
 </body>
 
